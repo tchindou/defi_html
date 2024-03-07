@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet"
+                href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+
+        <!--StyleSheets-->
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/responsive.css">
+        <title>NewsLetter</title>
+</head>
+
+<body>
+        <div class="main">
+                <div class="subscription">
+
+                        <h1>Stay updated ! </h1>
+
+                        <p>Join 60,
+                                000+product managers receiving monthly update on : </p>
+
+                        <ul>
+                                <li>
+                                        <div>
+                                                <img src="/assets/images/icon-list.svg" alt="">
+                                        </div>
+                                        <span>Product discovery and building what matters</span>
+                                </li>
+
+                                <li>
+                                        <div>
+                                                <img src="/assets/images/icon-list.svg" alt="">
+                                        </div>
+                                        <span>Measuring to ensure updates are a success</span>
+                                </li>
+
+                                <li>
+                                        <div>
+                                                <img src="/assets/images/icon-list.svg" alt="">
+                                        </div>
+                                        <span>And much more !</span>
+                                </li>
+                        </ul>
+
+                        <form class="email-input">
+                                <div style="display: flex; justify-content: space-between;">
+                                        <label for="email">Email address</label>
+
+                                        <label for="email" class="error" style="color: red; display: none;">Valid email
+                                                required</label>
+                                </div>
+
+                                <input type="text" id="email" name="email" placeholder="   email@example">
+
+                                <button id="submit" type="submit">Subscribe to monthly newsletter</button>
+                        </form>
+
+                </div>
+
+                <div class="image">
+                        <img src="/assets/images/illustration-sign-up-mobile.svg" alt="">
+                </div>
+        </div>
+
+        <div class="dialog">
+                <div>
+                        <img src="/assets/images/icon-list.svg" alt="">
+                </div>
+
+                <h1>Thanks for subscribing</h1>
+
+                <p>a confirm email has been sent to <span id="output"></span>. Please open it and click the button
+                        inside to
+                        confirm your subscription.</p>
+                <button>Dismiss message</button>
+        </div>
+
+        <script src="/js/app.js"></script>
+</body>
+
+</html>
